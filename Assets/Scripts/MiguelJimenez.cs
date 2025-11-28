@@ -4,7 +4,6 @@ public class TriggerItem3D : MonoBehaviour
 {
 
     public string tagObjetivo = "Player";
-    public Item3DPopup popup;
     public Camera camaraJugador;
 
     [Header("Activar animación manual")]
@@ -31,13 +30,6 @@ public class TriggerItem3D : MonoBehaviour
 
     public void ActivarAnimacion()
     {
-        if (popup != null && camaraJugador != null)
-        {
-            popup.MostrarItem(camaraJugador);
-        }
-        else
-        {
-            Debug.LogWarning("Faltan referencias en TriggerItem3D (popup o camaraJugador)");
-        }
+
     }
 }
